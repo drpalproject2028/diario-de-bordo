@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diário de Bordo — DrPAL 2028</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf8f4;--card:#fff;--border:#e8e4dc;--text:#1a1814;--text2:#6b6560;--text3:#a09890;--gold:#b8860b;--goldbg:rgba(184,134,11,.06);--green:#16a34a;--amber:#d97706;--violet:#7c3aed;--blue:#2563eb;--pink:#db2777;--cyan:#0891b2;--r:8px;--shadow:0 1px 3px rgba(0,0,0,.04)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'IBM Plex Mono',monospace;background:var(--bg);color:var(--text);min-height:100vh}
+.page{max-width:720px;margin:0 auto;padding:48px 24px 80px}
+
+.masthead{text-align:center;padding-bottom:40px;border-bottom:1px solid var(--border);margin-bottom:40px}
+.masthead-eye{font-size:.55rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+.masthead h1{font-family:'Instrument Serif',serif;font-size:2.4rem;font-weight:400;margin:8px 0 4px}
+.masthead h1 em{font-style:italic;color:var(--gold)}
+.masthead-sub{font-size:.7rem;color:var(--text3);line-height:1.6}
+.masthead-links{margin-top:12px;font-size:.6rem;color:var(--text3)}
+.masthead-links a{color:var(--gold);text-decoration:none;border-bottom:1px dotted var(--gold)}
+
+/* Entry */
+.entry{margin-bottom:32px;padding-bottom:32px;border-bottom:1px solid var(--border)}
+.entry:last-of-type{border:none}
+.entry-date{font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.entry-title{font-family:'Instrument Serif',serif;font-size:1.4rem;font-weight:400;margin-bottom:12px;line-height:1.3}
+.entry-body{font-size:.75rem;color:var(--text2);line-height:1.8}
+.entry-body p{margin-bottom:10px}
+
+/* Tags */
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tag{font-size:.55rem;padding:3px 10px;border-radius:100px;background:var(--goldbg);color:var(--gold);letter-spacing:.05em}
+
+/* Links */
+.entry-links{margin-top:14px;font-size:.65rem}
+.entry-links a{color:var(--gold);text-decoration:none;border-bottom:1px dotted rgba(184,134,11,.3);margin-right:16px}
+.entry-links a:hover{border-color:var(--gold)}
+
+/* Stats */
+.stats{display:flex;gap:20px;margin-top:14px;padding-top:12px;border-top:1px solid rgba(0,0,0,.04)}
+.stat{font-size:.6rem;color:var(--text3)}
+.stat strong{color:var(--text2)}
+
+.footer{padding:32px 0;border-top:1px solid var(--border);font-size:.55rem;color:var(--text3);text-align:center;margin-top:40px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="masthead">
+  <div class="masthead-eye">CLAUDIUS · Módulo IX · Metacognição</div>
+  <h1>Diário de <em>Bordo</em></h1>
+  <div class="masthead-sub">Logbook público do sistema CLAUDIUS.<br>Cada sessão deixa uma entrada. O palimpsesto ganha pulso.</div>
+  <div class="masthead-links">
+    <a href="https://claudius-architecture.netlify.app">Arquitectura</a> ·
+    <a href="https://chatmap-forest-claudius.netlify.app">ChatMap Forest</a> ·
+    <a href="https://github.com/drpalproject2028">GitHub</a>
+  </div>
+</div>
+
+<!-- ═══ ENTRADA: 06 MARÇO 2026 ═══ -->
+<div class="entry">
+  <div class="entry-date">Sexta-feira · 06 de março de 2026</div>
+  <div class="entry-title">O dia em que o sistema nervoso acordou</div>
+  <div class="entry-body">
+    <p>Ontem morreu António Lobo Antunes. Comprei dois livros com o Ex Libris de Pedro Veiga — o Petrus — na Modo de Ler, a 30 metros da minha secretária. Nasceu o projecto PETRUS.</p>
+    <p>Hoje o CLAUDIUS ganhou sistema nervoso. Quatro workflows no n8n a correr às 07:00, 07:15 e 07:45. A Máquina Nocturna entrega o briefing matinal. O Arcanum do Dia calcula a carta da jornada de 78 dias — hoje é o dia 17, L'Étoile, a estrela que vem depois da torre. O Mestre de Nada gera a caption diária para o Instagram @omestredenada.</p>
+    <p>O pipeline de deploy ficou automático: Claude gera → GitHub push → Netlify API → site live. Zero Terminal. O ChatMap Forest está em v0.3. O mapa da arquitectura completa do CLAUDIUS foi publicado.</p>
+    <p>O Diário de Bordo é a última peça desta sessão — o logbook público que se actualiza automaticamente. Cada sessão do CLAUDIUS deixa um rastro aqui. O palimpsesto digital.</p>
+  </div>
+  <div class="tags">
+    <span class="tag">n8n</span>
+    <span class="tag">Netlify</span>
+    <span class="tag">Máquina Nocturna</span>
+    <span class="tag">Arcanum</span>
+    <span class="tag">Mestre de Nada</span>
+    <span class="tag">PETRUS</span>
+    <span class="tag">Lobo Antunes</span>
+    <span class="tag">Deploy Pipeline</span>
+  </div>
+  <div class="entry-links">
+    <a href="https://claudius-architecture.netlify.app">Mapa Arquitectura</a>
+    <a href="https://chatmap-forest-claudius.netlify.app">ChatMap Forest v0.3</a>
+    <a href="https://drpal2028.app.n8n.cloud">n8n Cloud</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><strong>4</strong> workflows n8n</div>
+    <div class="stat"><strong>3</strong> sites Netlify</div>
+    <div class="stat"><strong>3</strong> repos GitHub</div>
+    <div class="stat"><strong>Dia 17</strong>/78 jornada</div>
+  </div>
+</div>
+
+<div class="footer">
+  Paulo Branco · Ferramentas de IA: Claude (Anthropic) · Porto<br>
+  DrPAL Project 2028 · GENESIS Protocol · drpal2028.base.eth<br>
+  "A IA serve o Humano."
+</div>
+
+</div>
+</body>
+</html>
